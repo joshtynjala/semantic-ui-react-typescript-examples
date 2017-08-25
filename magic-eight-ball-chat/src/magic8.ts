@@ -24,6 +24,6 @@ const MESSAGES =
 
 export default function magic8(): string
 {
-	let index = Math.round(MESSAGES.length * Math.random());
+	let index = Math.floor(MESSAGES.length * Math.random());
 	return MESSAGES[index];
 }
