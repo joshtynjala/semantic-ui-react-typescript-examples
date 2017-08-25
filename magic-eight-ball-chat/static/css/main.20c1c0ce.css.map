@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA,KAEC,eAAiB,CAIlB,UAHC,WAAa,CAOb,KAFA,aAAe","file":"static/css/main.20c1c0ce.css","sourcesContent":["html\n{\n\toverflow: hidden;\n\theight: 100%;\n}\n\nbody\n{\n\toverflow: auto;\n\theight: 100%;\n}\n\n\n// WEBPACK FOOTER //\n// ./src/index.css"],"sourceRoot":""}
