@@ -8,7 +8,7 @@ Each example was created with [create-react-app](https://www.npmjs.com/package/c
 create-react-app my-app --scripts-version=react-scripts-ts
 ```
 
-For local development, run `npm start` in the root directory of any of these examples, and it will automatically start a server, launch the example in your browser, and watch for changes.
+For local development, run `npm start` in the root directory of any of these examples, and it will automatically start a server, launch the example in your browser, and watch for any changes that you make to the code. The page will reload with your changes automatically!
 
 ## [Magic 8-Ball Chat](http://joshtynjala.github.io/semantic-ui-react-typescript-examples/magic-eight-ball-chat/)
 
