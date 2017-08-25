@@ -8,14 +8,20 @@ Each example was created with [create-react-app](https://www.npmjs.com/package/c
 create-react-app my-app --scripts-version=react-scripts-ts
 ```
 
-## Magic 8-Ball Chat
+## [Magic 8-Ball Chat](http://joshtynjala.github.io/semantic-ui-react-typescript-examples/magic-eight-ball-chat/)
 
 Ask a yes or no question to the magic 8-ball and it will give you an answer. Styled like a chat application.
 
-## Loan Payment Calculator
+* [Run Magic 8-Ball Chat example](http://joshtynjala.github.io/semantic-ui-react-typescript-examples/magic-eight-ball-chat/)
+
+## [Loan Payment Calculator](http://joshtynjala.github.io/semantic-ui-react-typescript-examples/loan-payment-calculator/)
 
 Change the the principal, the interest rate, and the number of years required to pay back the loan to calculate your monthly payment. Includes a custom NumericStepper component.
 
-## Todos
+* [Run Loan Payment Calculator example](http://joshtynjala.github.io/semantic-ui-react-typescript-examples/loan-payment-calculator/)
+
+## [Todos](http://joshtynjala.github.io/semantic-ui-react-typescript-examples/todos/)
 
 Keep track of a list of things you need to do. Add items, check them when completed, and clear all completed items. Displayed in a Card component.
+
+* [Run Todos example](http://joshtynjala.github.io/semantic-ui-react-typescript-examples/todos/)
