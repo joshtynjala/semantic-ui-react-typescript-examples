@@ -2,6 +2,7 @@
   "name": "loan-payment-calculator",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://joshtynjala.github.io/semantic-ui-react-typescript-examples/loan-payment-calculator",
   "dependencies": {
     "@types/jest": "^20.0.8",
     "@types/node": "^8.0.24",
@@ -16,6 +17,11 @@
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
-    "eject": "react-scripts-ts eject"
+    "eject": "react-scripts-ts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build -e loan-payment-calculator"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.0.0"
   }
 }
