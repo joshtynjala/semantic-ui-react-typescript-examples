@@ -1,6 +1,6 @@
 {
-  "short_name": "Magic 8 Ball",
-  "name": "Magic 8 Ball",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
