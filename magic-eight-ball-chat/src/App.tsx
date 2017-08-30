@@ -23,6 +23,8 @@ export default class App extends React.Component<object, AppState>
 		};
 	}
 
+	private _container: HTMLDivElement;
+
 	render()
 	{
 		let items = this.state.items.map((message: ChatMessage, index: number) =>
@@ -34,13 +36,21 @@ export default class App extends React.Component<object, AppState>
 			);
 		});
 		return (
-			<Container
-				fluid>
+			<div
+				style={{
+					display: "flex",
+					flexDirection: "column",
+					height: "100%"
+				}}>
 				<Menu
-					fixed="top"
 					inverted
 					color="green"
-					borderless>
+					borderless
+					style={{
+						flexShrink: 0, //don't allow to shrink
+						borderRadius: 0, //clear semantic-ui style
+						margin: 0 //clear semantic-ui style
+					}}>
 					<Container text>
 						<Menu.Item>
 							<Menu.Header as="h1">
@@ -49,11 +59,31 @@ export default class App extends React.Component<object, AppState>
 						</Menu.Item>
 					</Container>
 				</Menu>
+				<div
+					ref={(container: HTMLDivElement) => this._container = container}
+					style={{
+						flexGrow: 1,
+						overflowX: "hidden",
+						overflowY: "auto",
+						paddingTop: "1.5em",
+						paddingBottom: "1.5em"
+					}}>
+					<Container
+						text>
+						<List>
+							{items}
+						</List>
+					</Container>
+				</div>
 				<Menu
-					fixed="bottom"
 					inverted
 					color="green"
-					borderless>
+					borderless
+					style={{
+						flexShrink: 0, //don't allow to shrink
+						borderRadius: 0, //clear semantic-ui style
+						margin: 0 //clear semantic-ui style
+					}}>
 					<Container
 						text
 						style={{
@@ -78,17 +108,7 @@ export default class App extends React.Component<object, AppState>
 						</Button>
 					</Container>
 				</Menu>
-				<Container
-					text
-					style={{
-						paddingTop: "6em",
-						paddingBottom: "6em"
-					}}>
-					<List>
-						{items}
-					</List>
-				</Container>
-			</Container>
+			</div>
 		);
 	}
 
@@ -97,7 +117,7 @@ export default class App extends React.Component<object, AppState>
 		if(prevState.items.length !== this.state.items.length)
 		{
 			//scroll to end when new messages appear
-			document.body.scrollTop = document.body.scrollHeight - document.body.clientHeight;
+			this._container.scrollTop = this._container.scrollHeight - this._container.clientHeight;
 		}
 	}
 
