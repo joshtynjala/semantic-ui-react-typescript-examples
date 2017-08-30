@@ -1,0 +1,6 @@
+html, body, #root
+{
+	/* we don't want any of these to scroll */
+	overflow: hidden;
+	height: 100%;
+}
