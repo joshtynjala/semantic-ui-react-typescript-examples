@@ -1,1 +1,0 @@
-{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA,gBAEC,gBACA,WAAa","file":"static/css/main.08149c08.css","sourcesContent":["html, body, #root\n{\n\toverflow: hidden;\n\theight: 100%;\n}\n\n\n// WEBPACK FOOTER //\n// ./src/index.css"],"sourceRoot":""}
