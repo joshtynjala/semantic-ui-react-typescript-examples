@@ -130,6 +130,15 @@ export default class App extends React.Component<object, AppState>
 		}
 		let items = this.state.items.slice();
 		items.push({text: this.state.questionText, user: USER_ME});
+		this.setState({questionText: "", items: items});
+		//reply after a short delay because that feels
+		//more natural than an instant reply
+		setTimeout(this.reply, 250);
+	}
+
+	private reply = () =>
+	{
+		let items = this.state.items.slice();
 		items.push({text: magic8(), user: USER_8BALL});
 		this.setState({questionText: "", items: items});
 	}
