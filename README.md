@@ -33,3 +33,9 @@ Change the the principal, the interest rate, and the number of years required to
 Keep track of a list of things you need to do. Add items, check them when completed, and clear all completed items. Displayed in a Card component.
 
 * [Run Todos example](https://joshtynjala.github.io/semantic-ui-react-typescript-examples/todos/)
+
+## [Bottom Navigation with Router](https://joshtynjala.github.io/semantic-ui-react-typescript-examples/bottom-navigation-with-router/)
+
+Navigate between views using navigation fixed to the bottom, powered by React Router.
+
+* [Run Bottom Navigation with Router example](https://joshtynjala.github.io/semantic-ui-react-typescript-examples/bottom-navigation-with-router/)
